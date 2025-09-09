@@ -1,0 +1,357 @@
+.payment-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.payment-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.payment-header h2 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.payment-header p {
+    margin: 0;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.payment-form {
+    margin-top: 1.5rem;
+}
+
+/* Payment Method Section */
+.payment-method-section {
+    margin-bottom: 2rem;
+}
+
+.payment-method-section h3 {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.payment-method-btn {
+    flex: 1;
+    min-width: 120px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+}
+
+/* Credit Card Section */
+.credit-card-section {
+    margin-bottom: 2rem;
+}
+
+.credit-card-section h3 {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.card-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.card-input:focus {
+    outline: none;
+    border-color: #3f51b5;
+}
+
+.card-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-input-small {
+    flex: 1;
+    height: 48px;
+    padding: 0 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.card-input-small:focus {
+    outline: none;
+    border-color: #3f51b5;
+}
+
+/* Billing Address Section */
+.billing-address-section {
+    margin-bottom: 2rem;
+}
+
+.billing-address-section h3 {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.address-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.address-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.address-input:focus {
+    outline: none;
+    border-color: #3f51b5;
+}
+
+.address-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.address-input-half {
+    flex: 2;
+    height: 48px;
+    padding: 0 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.address-input-quarter {
+    flex: 1;
+    height: 48px;
+    padding: 0 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.address-input-half:focus,
+.address-input-quarter:focus {
+    outline: none;
+    border-color: #3f51b5;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.pay-button {
+    flex: 2;
+    height: 48px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.cancel-button {
+    flex: 1;
+    height: 48px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.submit-section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.submit-button {
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-button:not(:disabled):hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:disabled {
+    background-color: #f5f5f5;
+    color: #bbb;
+    cursor: not-allowed;
+}
+
+.submit-button mat-icon {
+    margin-right: 0.5rem;
+}
+
+.security-notice {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4caf50;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.security-notice mat-icon {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-container {
+        margin: 0 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .payment-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .submit-button {
+        height: 44px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-container {
+        margin: 0;
+        border-radius: 0;
+        min-height: 100vh;
+        box-shadow: none;
+    }
+
+    .payment-header h2 {
+        font-size: 1.375rem;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .payment-container {
+        border: 2px solid #000;
+    }
+
+    .payment-header {
+        border-bottom-color: #000;
+    }
+
+    .submit-button:disabled {
+        border: 1px solid #666;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+
+    .submit-button,
+    .submit-button:not(:disabled):hover {
+        transition: none;
+        transform: none;
+    }
+}
+
+/* Focus Management */
+.payment-container:focus-within {
+    outline: 2px solid #2196f3;
+    outline-offset: 2px;
+}
+
+/* Loading State */
+.payment-container.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.payment-container.loading .submit-button {
+    position: relative;
+}
+
+.payment-container.loading .submit-button::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Error State */
+.payment-container.error .submit-button {
+    border-color: #f44336;
+}
+
+/* Success State */
+.payment-container.success .submit-button {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
