@@ -1,0 +1,84 @@
+.payment-gateway-app {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.app-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    h1 {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin: 0 0 0.5rem 0;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.1rem;
+        margin: 0;
+    }
+}
+
+.app-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+
+    .test-content {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .app-header {
+        padding: 1.5rem 1rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .app-main {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-header {
+        h1 {
+            font-size: 1.75rem;
+        }
+    }
+}
