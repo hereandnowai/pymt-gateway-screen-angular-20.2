@@ -1,0 +1,63 @@
+<div class="payment-container">
+    <div class="payment-header">
+        <h2>Secure Payment</h2>
+        <p>Your payment information is encrypted and secure</p>
+    </div>
+
+    <div class="payment-form">
+        <!-- Payment Method Selection -->
+        <div class="payment-method-section">
+            <h3>Payment Method</h3>
+            <div class="payment-methods">
+                <button mat-raised-button color="primary" class="payment-method-btn">
+                    <mat-icon>credit_card</mat-icon>
+                    Credit Card
+                </button>
+                <button mat-raised-button class="payment-method-btn">
+                    <mat-icon>smartphone</mat-icon>
+                    Apple Pay
+                </button>
+                <button mat-raised-button class="payment-method-btn">
+                    <mat-icon>account_balance_wallet</mat-icon>
+                    Google Pay
+                </button>
+            </div>
+        </div>
+
+        <!-- Credit Card Form -->
+        <div class="credit-card-section">
+            <h3>Card Information</h3>
+            <div class="card-inputs">
+                <input type="text" placeholder="Card Number" class="card-input" />
+                <div class="card-row">
+                    <input type="text" placeholder="MM/YY" class="card-input-small" />
+                    <input type="text" placeholder="CVC" class="card-input-small" />
+                </div>
+                <input type="text" placeholder="Cardholder Name" class="card-input" />
+            </div>
+        </div>
+
+        <!-- Billing Address -->
+        <div class="billing-address-section">
+            <h3>Billing Address</h3>
+            <div class="address-inputs">
+                <input type="text" placeholder="Address Line 1" class="address-input" />
+                <input type="text" placeholder="Address Line 2 (Optional)" class="address-input" />
+                <div class="address-row">
+                    <input type="text" placeholder="City" class="address-input-half" />
+                    <input type="text" placeholder="State" class="address-input-quarter" />
+                    <input type="text" placeholder="ZIP" class="address-input-quarter" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button mat-raised-button color="primary" class="pay-button">
+                <mat-icon>lock</mat-icon>
+                Pay Securely
+            </button>
+            <button mat-stroked-button class="cancel-button">Cancel</button>
+        </div>
+    </div>
+</div>
